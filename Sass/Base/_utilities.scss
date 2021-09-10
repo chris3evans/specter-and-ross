@@ -1,0 +1,37 @@
+// LAYOUT
+.center {
+  display: flex;
+  justify-content: center;
+}
+.center-text {
+  text-align: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+// BACKGROUNDS / COLOURS
+.text-white {
+  color: white;
+}
+
+// MARGINS
+.margin-top-large {
+  margin-top: 8rem;
+}
+.margin-top-med {
+  margin-top: 6rem;
+}
+.margin-top-small {
+  margin-top: 4rem;
+}
+
+.margin-bottom-large {
+  margin-bottom: 8rem;
+}
+.margin-bottom-med {
+  margin-bottom: 6rem;
+}
+.margin-bottom-small {
+  margin-bottom: 4rem;
+}

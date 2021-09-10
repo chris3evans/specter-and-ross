@@ -1,0 +1,43 @@
+.qualities {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 0.1rem $color-text-grey solid;
+  border-radius: 1rem;
+
+  &__list {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    font-size: 6rem;
+    margin-right: 1rem;
+
+    // NEED TO ADD SUPPORTS TO THIS
+    background-image: linear-gradient(
+      to right,
+      $color-main-red,
+      $color-light-red-1
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  &__text {
+    color: black;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+  }
+}
