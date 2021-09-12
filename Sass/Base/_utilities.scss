@@ -12,6 +12,9 @@
 .display-inline-block {
   display: inline-block;
 }
+.justify-text {
+  text-align: justify;
+}
 
 // BACKGROUNDS / COLOURS
 .text-white {
@@ -40,4 +43,25 @@
 }
 .margin-bottom-small {
   margin-bottom: 4rem;
+}
+
+// PADDINGS
+.padding-top-large {
+  padding-top: 8rem;
+}
+.padding-top-med {
+  padding-top: 6rem;
+}
+.padding-top-small {
+  padding-top: 4rem;
+}
+
+.padding-bottom-large {
+  padding-bottom: 8rem;
+}
+.padding-bottom-med {
+  padding-bottom: 6rem;
+}
+.padding-bottom-small {
+  padding-bottom: 4rem;
 }

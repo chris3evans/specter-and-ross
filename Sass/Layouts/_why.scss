@@ -1,0 +1,20 @@
+.section-why {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(black, 0.1),
+    rgba($color-main-red, 0.1)
+  );
+}
+
+.why {
+  padding: 1rem;
+
+  &__main-text {
+    text-align: center;
+  }
+
+  &__chart {
+    padding: 1rem;
+    padding-bottom: 4rem;
+  }
+}

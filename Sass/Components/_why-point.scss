@@ -1,0 +1,45 @@
+.why__point {
+  padding: 1rem;
+}
+
+.why__symbol {
+  display: flex;
+  justify-content: center;
+}
+
+.why__icon {
+  font-size: 10rem;
+
+  // NEED TO ADD SUPPORTS TO THIS
+  background-image: linear-gradient(
+    to right,
+    $color-main-red,
+    $color-light-red-1
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.why__text {
+  margin-top: 1rem;
+}
+
+.why__heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 0.1rem;
+    width: 30%;
+    background-color: black;
+    margin: 1rem 0rem 2rem 0rem;
+  }
+}
+
+.why__paragaph {
+  margin-top: 1rem;
+}

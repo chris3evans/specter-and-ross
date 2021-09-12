@@ -58,7 +58,7 @@ body {
   letter-spacing: 0.1rem;
   line-height: 2.8rem;
   font-weight: 600;
-  color: black;
+  color: #3b3b3b;
 }
 
 .about__container--text {
@@ -97,6 +97,10 @@ body {
   display: inline-block;
 }
 
+.justify-text {
+  text-align: justify;
+}
+
 .text-white {
   color: white;
 }
@@ -127,6 +131,30 @@ body {
 
 .margin-bottom-small {
   margin-bottom: 4rem;
+}
+
+.padding-top-large {
+  padding-top: 8rem;
+}
+
+.padding-top-med {
+  padding-top: 6rem;
+}
+
+.padding-top-small {
+  padding-top: 4rem;
+}
+
+.padding-bottom-large {
+  padding-bottom: 8rem;
+}
+
+.padding-bottom-med {
+  padding-bottom: 6rem;
+}
+
+.padding-bottom-small {
+  padding-bottom: 4rem;
 }
 
 .btn-cta {
@@ -305,6 +333,58 @@ body {
   color: transparent;
 }
 
+.why__point {
+  padding: 1rem;
+}
+
+.why__symbol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.why__icon {
+  font-size: 10rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#db2525), to(#ff8c8c));
+  background-image: linear-gradient(to right, #db2525, #ff8c8c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.why__text {
+  margin-top: 1rem;
+}
+
+.why__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.why__heading::after {
+  content: "";
+  display: inline-block;
+  height: 0.1rem;
+  width: 30%;
+  background-color: black;
+  margin: 1rem 0rem 2rem 0rem;
+}
+
+.why__paragaph {
+  margin-top: 1rem;
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -397,5 +477,23 @@ body {
 
 .hero-cta {
   display: inline-block;
+}
+
+.section-why {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(219, 37, 37, 0.1)));
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.1), rgba(219, 37, 37, 0.1));
+}
+
+.why {
+  padding: 1rem;
+}
+
+.why__main-text {
+  text-align: center;
+}
+
+.why__chart {
+  padding: 1rem;
+  padding-bottom: 4rem;
 }
 /*# sourceMappingURL=main.css.map */
