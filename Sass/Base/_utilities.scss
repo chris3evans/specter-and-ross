@@ -3,6 +3,9 @@
   display: flex;
   justify-content: center;
 }
+.align {
+  align-items: center;
+}
 .center-text {
   text-align: center;
 }
@@ -14,6 +17,12 @@
 }
 .justify-text {
   text-align: justify;
+}
+.position-relative {
+  position: relative;
+}
+.height-auto {
+  overflow: none;
 }
 
 // BACKGROUNDS / COLOURS
@@ -43,6 +52,9 @@
 }
 .margin-bottom-small {
   margin-bottom: 4rem;
+}
+.margin-bottom-very-small {
+  margin-bottom: 2rem;
 }
 
 // PADDINGS

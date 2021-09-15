@@ -1,0 +1,36 @@
+.steps-card {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0rem 1rem 2rem rgba(black, 0.3);
+  border-radius: 0.5rem;
+
+  &:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    flex: 1;
+    margin-right: 1rem;
+  }
+  &__paragraph {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+  &__image {
+    flex: 0 0 10%;
+  }
+  &__icon {
+    font-size: 4.5rem;
+
+    // NEED TO ADD SUPPORTS TO THIS
+    background-image: linear-gradient(
+      to right,
+      $color-main-red,
+      $color-light-red-1
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
