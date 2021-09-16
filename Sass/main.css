@@ -180,6 +180,14 @@ body {
   padding-bottom: 4rem;
 }
 
+.line::after {
+  content: "";
+  display: inline-block;
+  background-color: #3b3b3b;
+  height: 15rem;
+  width: 0.1rem;
+}
+
 .btn-cta {
   padding: 2rem 6rem;
   font-size: 2.2rem;
@@ -218,6 +226,142 @@ body {
   width: 0.1rem;
   height: 12rem;
   background-color: #3b3b3b;
+}
+
+.mechanism {
+  padding: 1.5rem;
+}
+
+.mechanism:not(:last-of-type) {
+  margin-bottom: -5.9rem;
+}
+
+.mechanism__number-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 10rem;
+}
+
+.mechanism__number-left--text {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #3b3b3b;
+}
+
+.mechanism__info-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 10rem;
+  padding: 2rem;
+  border: none;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0rem 1rem 3rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0rem 1rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.mechanism__info-left--icon {
+  font-size: 6rem;
+  margin-left: 2rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#db2525), to(#ff8c8c));
+  background-image: linear-gradient(to right, #db2525, #ff8c8c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.mechanism__info-left--text {
+  font-size: 1.8rem;
+  color: #3b3b3b;
+}
+
+.mechanism__connect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mechanism__connect::before {
+  content: "";
+  display: inline-block;
+  background-color: #3b3b3b;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 4rem;
+  border-radius: 100%;
+}
+
+.mechanism__number-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 10rem;
+}
+
+.mechanism__number-right--text {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #3b3b3b;
+}
+
+.mechanism__info-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 10rem;
+  padding: 2rem;
+  border: none;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0rem 1rem 3rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0rem 1rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.mechanism__info-right--icon {
+  font-size: 6rem;
+  margin-right: 2rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#db2525), to(#ff8c8c));
+  background-image: linear-gradient(to right, #db2525, #ff8c8c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.mechanism__info-right--text {
+  font-size: 1.8rem;
+  color: #3b3b3b;
 }
 
 .navigation {
@@ -497,6 +641,18 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 calc( 3 * ((100% - (3 * 6rem)) / 4) + (2 * 6rem));
           flex: 0 0 calc( 3 * ((100% - (3 * 6rem)) / 4) + (2 * 6rem));
+}
+
+.col-1-of-7 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc((100% - (6 * 6rem)) / 7);
+          flex: 0 0 calc((100% - (6 * 6rem)) / 7);
+}
+
+.col-3-of-7 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc( 3 * ((100% - (6 * 6rem)) / 7) + (2 * 6rem));
+          flex: 0 0 calc( 3 * ((100% - (6 * 6rem)) / 7) + (2 * 6rem));
 }
 
 .hero {

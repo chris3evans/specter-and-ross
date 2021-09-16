@@ -77,3 +77,12 @@
 .padding-bottom-small {
   padding-bottom: 4rem;
 }
+
+// PSEUDO ELEMENTS
+.line::after {
+  content: "";
+  display: inline-block;
+  background-color: $color-text-grey;
+  height: 15rem;
+  width: 0.1rem;
+}

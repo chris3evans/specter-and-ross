@@ -1,0 +1,110 @@
+.mechanism {
+  padding: 1.5rem;
+
+  &:not(:last-of-type) {
+    margin-bottom: -5.9rem;
+  }
+  // LEFT SIDE
+  &__number-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 10rem;
+
+    &--text {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: $color-text-grey;
+    }
+  }
+
+  &__info-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 10rem;
+    padding: 2rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0rem 1rem 3rem rgba(black, 0.2);
+
+    &--icon {
+      font-size: 6rem;
+      margin-left: 2rem;
+      // NEED TO ADD SUPPORTS TO THIS
+      background-image: linear-gradient(
+        to right,
+        $color-main-red,
+        $color-light-red-1
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    &--text {
+      font-size: 1.8rem;
+      color: $color-text-grey;
+    }
+  }
+
+  // MIDDLE
+  &__connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      background-color: $color-text-grey;
+      height: 1.5rem;
+      width: 1.5rem;
+      margin-bottom: 1rem;
+      margin-top: 4rem;
+      border-radius: 100%;
+    }
+  }
+
+  // RIGHT SIDE
+  &__number-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 10rem;
+
+    &--text {
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: $color-text-grey;
+    }
+  }
+
+  &__info-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 10rem;
+    padding: 2rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0rem 1rem 3rem rgba(black, 0.2);
+
+    &--icon {
+      font-size: 6rem;
+      margin-right: 2rem;
+      // NEED TO ADD SUPPORTS TO THIS
+      background-image: linear-gradient(
+        to right,
+        $color-main-red,
+        $color-light-red-1
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    &--text {
+      font-size: 1.8rem;
+      color: $color-text-grey;
+    }
+  }
+}
