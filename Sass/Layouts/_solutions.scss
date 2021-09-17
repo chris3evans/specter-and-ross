@@ -1,0 +1,31 @@
+.solutions-heading {
+  height: 8rem;
+  background-image: linear-gradient(
+    to right,
+    $color-main-red,
+    $color-light-red-2
+  );
+  align-items: center;
+}
+
+.solutions-row {
+  height: 6rem;
+  background-color: white;
+  border-bottom: 0.1rem solid $color-text-grey;
+  align-items: center;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem 1rem;
+
+  &__text {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2.7rem;
+    color: white;
+  }
+}

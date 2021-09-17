@@ -1,0 +1,32 @@
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+
+  &__icon {
+    font-size: 4rem;
+    // NEED TO ADD SUPPORTS TO THIS
+    background-image: linear-gradient(
+      to right,
+      $color-main-green,
+      $color-light-green-1
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+.solution {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &__text {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $color-text-grey;
+  }
+}

@@ -1,0 +1,123 @@
+// LEFT SIDE
+
+.details {
+  background-image: linear-gradient(
+      rgba($color-main-red, 0.8),
+      (rgba($color-light-red-2, 0.8))
+    ),
+    url("../../Images/contact-background-photo.png");
+
+  height: 60rem;
+  background-position: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+
+    &--icon {
+      font-size: 5rem;
+      color: white;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// RIGHT SIDE
+
+.form {
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  &__details {
+    padding: 1rem 0rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__detail {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    &--label {
+      flex: 1;
+      font-size: 2rem;
+    }
+
+    &--input {
+      flex: 0 0 70%;
+      height: 5rem;
+      font-size: 1.8rem;
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0rem 1rem 3rem rgba(black, 0.3);
+
+      &:focus {
+        outline: transparent;
+      }
+    }
+  }
+
+  &__message {
+    display: flex;
+    height: 20rem;
+
+    &--input {
+      flex: 1;
+      font-size: 1.8rem;
+      border: none;
+      background-color: white;
+      box-shadow: 0rem 1rem 3rem rgba(black, 0.3);
+      border-radius: 1rem;
+      padding: 0.5rem;
+
+      &:focus {
+        outline: transparent;
+      }
+
+      &::placeholder {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+  }
+
+  &__button {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__submit {
+    height: 6rem;
+    width: 20rem;
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: $color-main-red;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    transition: all 0.3s;
+    box-shadow: 0rem 1rem 3rem rgba(black, 0.3);
+
+    &:hover {
+      background-color: $color-light-red-2;
+      box-shadow: none;
+    }
+  }
+}
