@@ -12,6 +12,11 @@
 .flex-column {
   flex-direction: column;
 }
+.display-block {
+  @include respond(tab-port) {
+    display: block !important;
+  }
+}
 .display-inline-block {
   display: inline-block;
 }
@@ -33,6 +38,10 @@
 // MARGINS
 .margin-top-large {
   margin-top: 8rem;
+
+  @include respond(tab-port) {
+    margin-top: 6rem;
+  }
 }
 .margin-top-med {
   margin-top: 6rem;
@@ -46,6 +55,10 @@
 
 .margin-bottom-large {
   margin-bottom: 8rem;
+
+  @include respond(tab-port) {
+    margin-bottom: 6rem;
+  }
 }
 .margin-bottom-med {
   margin-bottom: 6rem;
@@ -76,6 +89,10 @@
 }
 .padding-bottom-small {
   padding-bottom: 4rem;
+}
+
+.white-border {
+  border: 0.1rem white solid;
 }
 
 // PSEUDO ELEMENTS

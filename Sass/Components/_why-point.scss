@@ -1,5 +1,9 @@
 .why__point {
   padding: 1rem;
+
+  @include respond(tab-port) {
+    margin-bottom: 4rem;
+  }
 }
 
 .why__symbol {

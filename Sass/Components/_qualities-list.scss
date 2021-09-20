@@ -5,6 +5,10 @@
   border: 0.1rem $color-text-grey solid;
   border-radius: 1rem;
 
+  @include respond(tab-port) {
+    border: none;
+  }
+
   &__list {
     width: 100%;
     display: flex;
@@ -12,11 +16,30 @@
     justify-content: space-between;
     align-items: center;
     padding: 3rem;
+
+    @include respond(tab-port) {
+      display: block;
+      width: 80%;
+      padding: 1rem;
+    }
   }
 
   &__item {
     display: flex;
     align-items: center;
+
+    &:not(:last-of-type) {
+      @include respond(tab-port) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    @include respond(tab-port) {
+      justify-content: center;
+      border: 0.1rem $color-text-grey solid;
+      border-radius: 1rem;
+      padding: 1rem;
+    }
   }
 
   &__icon {

@@ -11,10 +11,14 @@
     justify-content: flex-end;
     height: 10rem;
 
-    &--text {
-      font-size: 2.5rem;
-      font-weight: 600;
-      color: $color-text-grey;
+    @include respond(phone-big) {
+      display: none;
+
+      &--text {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: $color-text-grey;
+      }
     }
   }
 
@@ -28,6 +32,14 @@
     border-radius: 1rem;
     box-shadow: 0rem 1rem 3rem rgba(black, 0.2);
 
+    @include respond(tab-port) {
+      height: 12rem;
+    }
+    @include respond(phone-big) {
+      margin-bottom: 5rem;
+      justify-content: center;
+    }
+
     &--icon {
       font-size: 6rem;
       margin-left: 2rem;
@@ -40,6 +52,10 @@
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
+
+      @include respond(tab-port) {
+        font-size: 6rem;
+      }
     }
     &--text {
       font-size: 1.8rem;
@@ -53,6 +69,9 @@
     flex-direction: column;
     align-items: center;
 
+    @include respond(phone-big) {
+      display: none;
+    }
     &::before {
       content: "";
       display: inline-block;
@@ -72,6 +91,10 @@
     justify-content: flex-start;
     height: 10rem;
 
+    @include respond(phone-big) {
+      display: none;
+    }
+
     &--text {
       font-size: 2.5rem;
       font-weight: 600;
@@ -89,6 +112,15 @@
     border-radius: 1rem;
     box-shadow: 0rem 1rem 3rem rgba(black, 0.2);
 
+    @include respond(tab-port) {
+      height: 12rem;
+    }
+
+    @include respond(phone-big) {
+      margin-bottom: 6rem;
+      justify-content: center;
+    }
+
     &--icon {
       font-size: 6rem;
       margin-right: 2rem;
@@ -101,6 +133,10 @@
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
+
+      @include respond(tab-port) {
+        font-size: 5rem;
+      }
     }
     &--text {
       font-size: 1.8rem;

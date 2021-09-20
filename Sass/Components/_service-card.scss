@@ -6,11 +6,21 @@
   height: 100%;
   background-color: white;
 
+  @include respond(tab-port) {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+  }
+
   &__heading {
     display: flex;
     align-items: center;
     padding-bottom: 2rem;
     border-bottom: 0.1rem black solid;
+
+    @include respond(tab-port) {
+      padding-bottom: 1rem;
+    }
 
     &--icon {
       font-size: 4rem;

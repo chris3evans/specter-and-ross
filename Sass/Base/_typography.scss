@@ -3,11 +3,19 @@
   color: white;
   font-weight: 400;
   text-align: center;
+
+  @include respond(tab-land) {
+    font-size: 10rem;
+  }
+  @include respond(tab-port) {
+    font-size: 8rem;
+  }
 }
 
 .secondary__title {
   font-size: 4rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .tertiary__title {
