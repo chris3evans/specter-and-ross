@@ -17,6 +17,12 @@
     display: block !important;
   }
 }
+
+.display-block-phone {
+  @include respond(phone-big) {
+    display: block !important;
+  }
+}
 .display-inline-block {
   display: inline-block;
 }

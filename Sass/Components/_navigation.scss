@@ -6,10 +6,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include respond(tab-land) {
+      display: block;
+      margin-top: 2rem;
+    }
   }
 
   &__item {
     text-align: center;
+
+    &:not(:last-of-type) {
+      @include respond(tab-land) {
+        margin-bottom: 1rem;
+      }
+    }
   }
 
   &__link:link,
