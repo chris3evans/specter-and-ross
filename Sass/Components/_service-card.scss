@@ -26,7 +26,6 @@
       font-size: 4rem;
       margin-right: 2rem;
 
-      // NEED TO ADD SUPPORTS TO THIS
       background-image: linear-gradient(
         to right,
         $color-main-red,
@@ -36,8 +35,5 @@
       -webkit-background-clip: text;
       color: transparent;
     }
-  }
-
-  &__text {
   }
 }
